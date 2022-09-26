@@ -140,7 +140,7 @@
   position: absolute;
   width: 100%; height: 100%;
   background-repeat: no-repeat;
-  animation: flash 0.1s linear infinite;
+  /* animation: flash 0.1s linear infinite; */
 }
 .skelton div:nth-child(1) {
   top: 70px; left: 60px;
@@ -164,17 +164,41 @@
   animation-delay: 0.05s;
 }
 .skelton div:nth-child(4) {
-  top: 350px; left: -10px;
+  top: 360px; left: -10px;
   /* transform: rotate(3deg); */
   background-image: url(./images/Beta-endorphin.svg);
-  background-size: 1000px;
+  background-size: 1100px;
   animation-delay: 0.07s;
 }
-/* .skelton div:nth-child(5) {
-  top: 45%; left: 0;
+.skelton div:nth-child(5) {
+  top: 290px; left: 50px;
   width: 100%; height: 100%;
-  transform: rotate(8deg);
-  background-image: url(./images/Beta-endorphin2.svg);
-  background-size: 90%;
+  /* transform: rotate(8deg); */
+  background-image: url(./images/Acetaminophen.svg);
+  background-size: 200px;
   animation-delay: 0.05s;
-} */
+}
+.skelton div:nth-child(6) {
+  top: 330px; left: 740px;
+  width: 100%; height: 100%;
+  /* transform: rotate(8deg); */
+  background-image: url(./images/Celecoxib.svg);
+  background-size: 220px;
+  animation-delay: 0.05s;
+}
+.skelton div:nth-child(7) {
+  top: 330px; left: 1040px;
+  width: 100%; height: 100%;
+  /* transform: rotate(8deg); */
+  background-image: url(./images/Retinol.svg);
+  background-size: 300px;
+  animation-delay: 0.05s;
+}
+.skelton div:nth-child(8) {
+  top: 430px; left: 1200px;
+  width: 100%; height: 100%;
+  /* transform: rotate(8deg); */
+  background-image: url(./images/Riboflavin.svg);
+  background-size: 220px;
+  animation-delay: 0.05s;
+}
