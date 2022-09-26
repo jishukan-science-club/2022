@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[614],{223:function(n,u,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/note",function(){return t(483)}])},483:function(n,u,t){"use strict";t.r(u);var e=t(5893);u.default=function(){return(0,e.jsx)("div",{children:"Note"})}}},function(n){n.O(0,[774,888,179],function(){return n(n.s=223)}),_N_E=n.O()}]);
