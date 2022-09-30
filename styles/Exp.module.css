@@ -1,0 +1,111 @@
+.container {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  background-color: #000f1a;
+}
+
+.stage {
+  position: absolute;
+  border: dashed #5f5f6f;
+  top: 20px; left: 20px;
+  width: calc(100% - 40px); height: calc(100% - 40px);
+}
+
+/**
+ * logos
+ */
+.logo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+.logo::before,
+.logo::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.jssclogo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-image: url(./images/logo.svg);
+  background-size: min(35%, 200px);
+}
+.jslogo {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-position: calc(100% - 10px) 10px;
+  background-repeat: no-repeat;
+  background-image: url(./images/js.svg);
+  background-size: min(15%, 170px);
+}
+
+/*** nav ***/
+.nav {
+  position: absolute;
+  top: 0; left: 10px;
+  margin-bottom:20px;
+  z-index: 10;
+  max-width: calc(100% - min(15%, 170px));
+}
+
+.nav a {
+  display: inline-block;
+  opacity: 0;
+  transition: all 0.6s ease 0s;
+  border-radius: 50px;
+  width: calc(100% - 80px);
+  margin: 0;
+  padding: 0;
+}
+
+.inner p::after {
+  content: '';
+}
+
+.inner {
+  display: inline-block;
+  margin-left: 23px;
+}
+.inner p {
+  color: white;
+  font-size: max(10%, 16px);
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0;
+  margin-top: 15px;
+}
+.inner p::after {
+  position: absolute;
+  bottom: 35%;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+.inner p:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+/* exp */
+.exp_stage {
+  position: absolute;
+  border: dashed #5f5f6f;
+  top: 100px; left: 30%;
+  width: calc(70% - 40px); height: calc(100% - 140px);
+}

@@ -102,12 +102,24 @@
 }
 
 
-@keyframes struct {
-  from {
+@keyframes blink {
+  0% {
     opacity: 0;
   }
-  to {
-    opacity: 100%;
+  10% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 60%;
+  }
+  60% {
+    opacity: 60%;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes flash {
@@ -119,86 +131,827 @@
     opacity: 50%;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
-/** dopa **/
-
-.skelton {
+.skeltonstage {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   overflow: hidden;
 }
-.skelton::before,
-.skelton::after {
+.skelton1 {
+  position: absolute;
+  top: 0; left: 0;
+  width: 1250px; height: 1100px;
+  overflow: hidden;
+}
+.skelton1::before,
+.skelton1::after {
   content: ""; display: block;
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
 }
-.skelton div {
+.skelton1 div {
   position: absolute;
   width: 100%; height: 100%;
   background-repeat: no-repeat;
-  /* animation: flash 0.1s linear infinite; */
+  /* background-repeat: space; */
+  animation: blink 2s linear infinite;
+  transform-origin: 0% -50px;
+  /* padding: 100px; */
 }
-.skelton div:nth-child(1) {
+.skelton1 div:nth-child(1) {
   top: 70px; left: 60px;
-  /* transform: rotate(-3deg); */
   background-image: url(./images/dopamine.svg);
-  background-size: 200px;
-  animation-delay: 0.03s;
+  background-size: 170px;
+  animation-delay: 1.96s;
 }
-.skelton div:nth-child(2) {
-  top: 120px; left: 0px;
-  /* transform: rotate(-15deg); */
-  background-image: url(./images/Alpha-endorphin.svg);
-  background-size: 1000px;
-  animation-delay: 0.01s;
-}
-.skelton div:nth-child(3) {
-  top: 30px; left: 400px;
-  /* transform: rotate(5deg); */
+.skelton1 div:nth-child(3) {
+  top: 30px; left: 300px;
   background-image: url(./images/serotonin.svg);
   background-size: 200px;
-  animation-delay: 0.05s;
+  animation-delay: 0.25s;
 }
-.skelton div:nth-child(4) {
-  top: 360px; left: -10px;
-  /* transform: rotate(3deg); */
-  background-image: url(./images/Beta-endorphin.svg);
-  background-size: 1100px;
-  animation-delay: 0.07s;
-}
-.skelton div:nth-child(5) {
-  top: 290px; left: 50px;
+.skelton1 div:nth-child(5) {
+  top: 190px; left: -50px;
   width: 100%; height: 100%;
-  /* transform: rotate(8deg); */
   background-image: url(./images/Acetaminophen.svg);
   background-size: 200px;
-  animation-delay: 0.05s;
+  animation-delay: 1.95s;
 }
-.skelton div:nth-child(6) {
-  top: 330px; left: 740px;
+.skelton1 div:nth-child(6) {
+  top: 230px; left: 280px;
   width: 100%; height: 100%;
-  /* transform: rotate(8deg); */
   background-image: url(./images/Celecoxib.svg);
   background-size: 220px;
-  animation-delay: 0.05s;
+  animation-delay: 1.77s;
 }
-.skelton div:nth-child(7) {
-  top: 330px; left: 1040px;
+.skelton1 div:nth-child(7) {
+  top: 200px; left: 500px;
   width: 100%; height: 100%;
-  /* transform: rotate(8deg); */
   background-image: url(./images/Retinol.svg);
   background-size: 300px;
-  animation-delay: 0.05s;
+  animation-delay: 0.26s;
 }
-.skelton div:nth-child(8) {
-  top: 430px; left: 1200px;
+.skelton1 div:nth-child(8) {
+  top: -50px; left: 590px;
   width: 100%; height: 100%;
-  /* transform: rotate(8deg); */
   background-image: url(./images/Riboflavin.svg);
   background-size: 220px;
-  animation-delay: 0.05s;
+  animation-delay: 0.96s;
+}
+.skelton1 div:nth-child(9) {
+  top: 260px; left: 120px;
+  background-image: url(./images/adenine.svg);
+  background-size: 100px;
+  animation-delay: 0.57s;
+}
+.skelton1 div:nth-child(10) {
+  top: 420px; left: 60px;
+  background-image: url(./images/alanine.svg);
+  background-size: 120px;
+  animation-delay: 1.70s;
+}
+.skelton1 div:nth-child(11) {
+  top: 400px; left: 430px;
+  background-image: url(./images/amino.svg);
+  background-size: 250px;
+  animation-delay: 0.23s;
+}
+.skelton1 div:nth-child(12) {
+  top: 500px; left: 170px;
+  background-image: url(./images/anserine.svg);
+  background-size: 250px;
+  animation-delay: 0.91s;
+}
+.skelton1 div:nth-child(13) {
+  top: 260px; left: 670px;
+  background-image: url(./images/carnosine.svg);
+  background-size: 270px;
+  animation-delay: 1.85s;
+}
+.skelton1 div:nth-child(14) {
+  top: 520px; left: 670px;
+  background-image: url(./images/cytosine.svg);
+  background-size: 100px;
+  animation-delay: 0.24s;
+}
+.skelton1 div:nth-child(15) {
+  top: 90px; left: 880px;
+  background-image: url(./images/deoxyribose.svg);
+  background-size: 100px;
+  animation-delay: 0.76s;
+}
+.skelton1 div:nth-child(16) {
+  top: 600px; left: 80px;
+  background-image: url(./images/galactose.svg);
+  background-size: 100px;
+  animation-delay: 1.68s;
+}
+.skelton1 div:nth-child(17) {
+  top: 700px; left: 400px;
+  background-image: url(./images/Acetaminophen.svg);
+  background-size: 200px;
+  animation-delay: 1.18s;
+}
+.skelton1 div:nth-child(18) {
+  top: 400px; left: 920px;
+  background-image: url(./images/adenine.svg);
+  background-size: 130px;
+  animation-delay: 1.68s;
+}
+.skelton1 div:nth-child(19) {
+  top: 200px; left: 1060px;
+  background-image: url(./images/alanine.svg);
+  background-size: 130px;
+  animation-delay: 1.05s;
+}
+.skelton1 div:nth-child(20) {
+  top: 650px; left: 830px;
+  background-image: url(./images/amino.svg);
+  background-size: 240px;
+  animation-delay: 1.07s;
+}
+.skelton1 div:nth-child(21) {
+  top: 780px; left: 630px;
+  background-image: url(./images/anserine.svg);
+  background-size: 240px;
+  animation-delay: 0.02s;
+}
+.skelton1 div:nth-child(22) {
+  top: 730px; left: 60px;
+  background-image: url(./images/carnosine.svg);
+  background-size: 240px;
+  animation-delay: 0.34s;
+}
+.skelton1 div:nth-child(23) {
+  top: 840px; left: 460px;
+  background-image: url(./images/Celecoxib.svg);
+  background-size: 240px;
+  animation-delay: 0.59s;
+}
+.skelton1 div:nth-child(24) {
+  top: 20px; left: 1020px;
+  background-image: url(./images/cytosine.svg);
+  background-size: 100px;
+  animation-delay: 1.20s;
+}
+.skelton1 div:nth-child(25) {
+  top: 570px; left: 520px;
+  background-image: url(./images/deoxyribose.svg);
+  background-size: 100px;
+  animation-delay: 1.80s;
+}
+.skelton1 div:nth-child(26) {
+  top: 540px; left: 1060px;
+  background-image: url(./images/dopamine.svg);
+  background-size: 170px;
+  animation-delay: 0.99s;
+}
+.skelton1 div:nth-child(27) {
+  top: 480px; left: 800px;
+  background-image: url(./images/galactose.svg);
+  background-size: 80px;
+  animation-delay: 0.97s;
+}
+.skelton1 div:nth-child(28) {
+  top: 920px; left: 30px;
+  background-image: url(./images/Retinol.svg);
+  background-size: 360px;
+  animation-delay: 1.57s;
+}
+.skelton1 div:nth-child(29) {
+  top: 770px; left: 990px;
+  background-image: url(./images/Riboflavin.svg);
+  background-size: 260px;
+  animation-delay: 1.95s;
+}
+.skelton1 div:nth-child(30) {
+  top: 900px; left: 720px;
+  background-image: url(./images/serotonin.svg);
+  background-size: 260px;
+  animation-delay: 0.37s;
+}
+.skelton1 div:nth-child(31) {
+  top: 900px; left: 720px;
+  background-image: url(./images/Acetaminophen.svg);
+  background-size: 260px;
+  animation-delay: 0.34s;
+}
+
+
+/* skelton2 */
+.skelton2 {
+  position: absolute;
+  top: 1050px; left: 0;
+  width: 1250px; height: 1100px;
+  overflow: hidden;
+}
+.skelton2::before,
+.skelton2::after {
+  content: ""; display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.skelton2 div {
+  position: absolute;
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  animation: blink 2s linear infinite;
+  transform-origin: 0% -50px;
+  /* padding: 100px; */
+}
+.skelton2 div:nth-child(1) {
+  top: 70px; left: 60px;
+  background-image: url(./images/dopamine.svg);
+  background-size: 170px;
+  animation-delay: 1.14s;
+}
+.skelton2 div:nth-child(3) {
+  top: 30px; left: 300px;
+  background-image: url(./images/serotonin.svg);
+  background-size: 200px;
+  animation-delay: 0.68s;
+}
+.skelton2 div:nth-child(5) {
+  top: 190px; left: -50px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Acetaminophen.svg);
+  background-size: 200px;
+  animation-delay: 0.89s;
+}
+.skelton2 div:nth-child(6) {
+  top: 230px; left: 280px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Celecoxib.svg);
+  background-size: 220px;
+  animation-delay: 1.56s;
+}
+.skelton2 div:nth-child(7) {
+  top: 200px; left: 500px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Retinol.svg);
+  background-size: 300px;
+  animation-delay: 1.41s;
+}
+.skelton2 div:nth-child(8) {
+  top: 0px; left: 590px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Riboflavin.svg);
+  background-size: 220px;
+  animation-delay: 0.41s;
+}
+.skelton2 div:nth-child(9) {
+  top: 260px; left: 120px;
+  background-image: url(./images/adenine.svg);
+  background-size: 100px;
+  animation-delay: 0.42s;
+}
+.skelton2 div:nth-child(10) {
+  top: 420px; left: 60px;
+  background-image: url(./images/alanine.svg);
+  background-size: 120px;
+  animation-delay: 0.12s;
+}
+.skelton2 div:nth-child(11) {
+  top: 400px; left: 430px;
+  background-image: url(./images/amino.svg);
+  background-size: 250px;
+  animation-delay: 1.57s;
+}
+.skelton2 div:nth-child(12) {
+  top: 500px; left: 170px;
+  background-image: url(./images/anserine.svg);
+  background-size: 250px;
+  animation-delay: 0.26s;
+}
+.skelton2 div:nth-child(13) {
+  top: 260px; left: 670px;
+  background-image: url(./images/carnosine.svg);
+  background-size: 270px;
+  animation-delay: 1.80s;
+}
+.skelton2 div:nth-child(14) {
+  top: 520px; left: 670px;
+  background-image: url(./images/cytosine.svg);
+  background-size: 100px;
+  animation-delay: 1.09s;
+}
+.skelton2 div:nth-child(15) {
+  top: 90px; left: 880px;
+  background-image: url(./images/deoxyribose.svg);
+  background-size: 100px;
+  animation-delay: 1.54s;
+}
+.skelton2 div:nth-child(16) {
+  top: 600px; left: 80px;
+  background-image: url(./images/galactose.svg);
+  background-size: 100px;
+  animation-delay: 1.18s;
+}
+.skelton2 div:nth-child(17) {
+  top: 700px; left: 400px;
+  background-image: url(./images/Acetaminophen.svg);
+  background-size: 200px;
+  animation-delay: 0.64s;
+}
+.skelton2 div:nth-child(18) {
+  top: 400px; left: 920px;
+  background-image: url(./images/adenine.svg);
+  background-size: 130px;
+  animation-delay: 1.56s;
+}
+.skelton2 div:nth-child(19) {
+  top: 200px; left: 1060px;
+  background-image: url(./images/alanine.svg);
+  background-size: 130px;
+  animation-delay: 1.45s;
+}
+.skelton2 div:nth-child(20) {
+  top: 650px; left: 830px;
+  background-image: url(./images/amino.svg);
+  background-size: 240px;
+  animation-delay: 1.27s;
+}
+.skelton2 div:nth-child(21) {
+  top: 780px; left: 630px;
+  background-image: url(./images/anserine.svg);
+  background-size: 240px;
+  animation-delay: 0.44s;
+}
+.skelton2 div:nth-child(22) {
+  top: 730px; left: 60px;
+  background-image: url(./images/carnosine.svg);
+  background-size: 240px;
+  animation-delay: 0.22s;
+}
+.skelton2 div:nth-child(23) {
+  top: 840px; left: 460px;
+  background-image: url(./images/Celecoxib.svg);
+  background-size: 240px;
+  animation-delay: 1.36s;
+}
+.skelton2 div:nth-child(24) {
+  top: 20px; left: 1020px;
+  background-image: url(./images/cytosine.svg);
+  background-size: 100px;
+  animation-delay: 1.47s;
+}
+.skelton2 div:nth-child(25) {
+  top: 570px; left: 520px;
+  background-image: url(./images/deoxyribose.svg);
+  background-size: 100px;
+  animation-delay: 0.27s;
+}
+.skelton2 div:nth-child(26) {
+  top: 540px; left: 1060px;
+  background-image: url(./images/dopamine.svg);
+  background-size: 170px;
+  animation-delay: 0.02s;
+}
+.skelton2 div:nth-child(27) {
+  top: 480px; left: 800px;
+  background-image: url(./images/galactose.svg);
+  background-size: 80px;
+  animation-delay: 0.13s;
+}
+.skelton2 div:nth-child(28) {
+  top: 920px; left: 30px;
+  background-image: url(./images/Retinol.svg);
+  background-size: 360px;
+  animation-delay: 1.03s;
+}
+.skelton2 div:nth-child(29) {
+  top: 770px; left: 990px;
+  background-image: url(./images/Riboflavin.svg);
+  background-size: 260px;
+  animation-delay: 0.72s;
+}
+.skelton2 div:nth-child(30) {
+  top: 900px; left: 720px;
+  background-image: url(./images/serotonin.svg);
+  background-size: 260px;
+  animation-delay: 0.66s;
+}
+.skelton2 div:nth-child(31) {
+  top: 900px; left: 720px;
+  background-image: url(./images/Acetaminophen.svg);
+  background-size: 260px;
+  animation-delay: 0.91s;
+}
+
+
+/* skelton3 */
+.skelton3 {
+  position: absolute;
+  top: 0; left: 1220px;
+  width: 1250px; height: 1100px;
+  overflow: hidden;
+}
+.skelton3::before,
+.skelton3::after {
+  content: ""; display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.skelton3 div {
+  position: absolute;
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  animation: blink 2s linear infinite;
+  transform-origin: 0% -50px;
+  /* padding: 100px; */
+}
+.skelton3 div:nth-child(1) {
+  top: 70px; left: 60px;
+  background-image: url(./images/dopamine.svg);
+  background-size: 170px;
+  animation-delay: 0.32s;
+}
+.skelton3 div:nth-child(3) {
+  top: 30px; left: 300px;
+  background-image: url(./images/serotonin.svg);
+  background-size: 200px;
+  animation-delay: 0.73s;
+}
+.skelton3 div:nth-child(5) {
+  top: 190px; left: 0px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Acetaminophen.svg);
+  background-size: 200px;
+  animation-delay: 1.00s;
+}
+.skelton3 div:nth-child(6) {
+  top: 230px; left: 280px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Celecoxib.svg);
+  background-size: 220px;
+  animation-delay: 1.17s;
+}
+.skelton3 div:nth-child(7) {
+  top: 200px; left: 500px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Retinol.svg);
+  background-size: 300px;
+  animation-delay: 0.18s;
+}
+.skelton3 div:nth-child(8) {
+  top: 0px; left: 590px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Riboflavin.svg);
+  background-size: 220px;
+  animation-delay: 0.00s;
+}
+.skelton3 div:nth-child(9) {
+  top: 260px; left: 120px;
+  background-image: url(./images/adenine.svg);
+  background-size: 100px;
+  animation-delay: 0.30s;
+}
+.skelton3 div:nth-child(10) {
+  top: 420px; left: 60px;
+  background-image: url(./images/alanine.svg);
+  background-size: 120px;
+  animation-delay: 0.11s;
+}
+.skelton3 div:nth-child(11) {
+  top: 400px; left: 430px;
+  background-image: url(./images/amino.svg);
+  background-size: 250px;
+  animation-delay: 0.64s;
+}
+.skelton3 div:nth-child(12) {
+  top: 500px; left: 170px;
+  background-image: url(./images/anserine.svg);
+  background-size: 250px;
+  animation-delay: 0.24s;
+}
+.skelton3 div:nth-child(13) {
+  top: 260px; left: 670px;
+  background-image: url(./images/carnosine.svg);
+  background-size: 270px;
+  animation-delay: 0.33s;
+}
+.skelton3 div:nth-child(14) {
+  top: 520px; left: 670px;
+  background-image: url(./images/cytosine.svg);
+  animation-delay: 0.04s;
+  background-size: 100px;
+}
+.skelton3 div:nth-child(15) {
+  top: 90px; left: 880px;
+  background-image: url(./images/deoxyribose.svg);
+  animation-delay: 0.50s;
+  background-size: 100px;
+}
+.skelton3 div:nth-child(16) {
+  top: 600px; left: 80px;
+  background-image: url(./images/galactose.svg);
+  animation-delay: 0.87s;
+  background-size: 100px;
+}
+.skelton3 div:nth-child(17) {
+  top: 700px; left: 400px;
+  background-image: url(./images/Acetaminophen.svg);
+  animation-delay: 1.56s;
+  background-size: 200px;
+}
+.skelton3 div:nth-child(18) {
+  top: 400px; left: 920px;
+  background-image: url(./images/adenine.svg);
+  animation-delay: 0.69s;
+  background-size: 130px;
+}
+.skelton3 div:nth-child(19) {
+  top: 200px; left: 1060px;
+  background-image: url(./images/alanine.svg);
+  animation-delay: 1.18s;
+  background-size: 130px;
+}
+.skelton3 div:nth-child(20) {
+  top: 650px; left: 830px;
+  background-image: url(./images/amino.svg);
+  animation-delay: 1.53s;
+  background-size: 240px;
+}
+.skelton3 div:nth-child(21) {
+  top: 780px; left: 630px;
+  background-image: url(./images/anserine.svg);
+  animation-delay: 1.97s;
+  background-size: 240px;
+}
+.skelton3 div:nth-child(22) {
+  top: 730px; left: 60px;
+  background-image: url(./images/carnosine.svg);
+  animation-delay: 1.58s;
+  background-size: 240px;
+}
+.skelton3 div:nth-child(23) {
+  top: 840px; left: 460px;
+  background-image: url(./images/Celecoxib.svg);
+  animation-delay: 1.65s;
+  background-size: 240px;
+}
+.skelton3 div:nth-child(24) {
+  top: 20px; left: 1020px;
+  background-image: url(./images/cytosine.svg);
+  animation-delay: 1.75s;
+  background-size: 100px;
+}
+.skelton3 div:nth-child(25) {
+  top: 570px; left: 520px;
+  background-image: url(./images/deoxyribose.svg);
+  animation-delay: 0.57s;
+  background-size: 100px;
+}
+.skelton3 div:nth-child(26) {
+  top: 540px; left: 1060px;
+  background-image: url(./images/dopamine.svg);
+  background-size: 170px;
+  animation-delay: 1.14s;
+}
+.skelton3 div:nth-child(27) {
+  top: 480px; left: 800px;
+  background-image: url(./images/galactose.svg);
+  animation-delay: 0.69s;
+  background-size: 80px;
+}
+.skelton3 div:nth-child(28) {
+  top: 920px; left: 30px;
+  background-image: url(./images/Retinol.svg);
+  animation-delay: 0.19s;
+  background-size: 360px;
+}
+.skelton3 div:nth-child(29) {
+  top: 770px; left: 990px;
+  background-image: url(./images/Riboflavin.svg);
+  animation-delay: 1.86s;
+  background-size: 260px;
+}
+.skelton3 div:nth-child(30) {
+  top: 900px; left: 720px;
+  background-image: url(./images/serotonin.svg);
+  animation-delay: 1.45s;
+  background-size: 260px;
+}
+.skelton3 div:nth-child(31) {
+  top: 900px; left: 720px;
+  background-image: url(./images/Acetaminophen.svg);
+  animation-delay: 0.30s;
+  background-size: 260px;
+}
+
+
+
+
+/* skelton4 */
+.skelton4 {
+  position: absolute;
+  top: 1050px; left: 1220px;
+  width: 1250px; height: 1100px;
+  overflow: hidden;
+}
+.skelton4::before,
+.skelton4::after {
+  content: ""; display: block;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+.skelton4 div {
+  position: absolute;
+  width: 100%; height: 100%;
+  background-repeat: no-repeat;
+  animation: blink 2s linear infinite;
+  transform-origin: 0% -50px;
+  /* padding: 100px; */
+}
+.skelton4 div:nth-child(1) {
+  top: 70px; left: 60px;
+  background-image: url(./images/dopamine.svg);
+  background-size: 170px;
+  animation-delay: 0.59s;
+}
+.skelton4 div:nth-child(3) {
+  top: 30px; left: 300px;
+  background-image: url(./images/serotonin.svg);
+  animation-delay: 1.94s;
+  background-size: 200px;
+}
+.skelton4 div:nth-child(5) {
+  top: 190px; left: 0px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Acetaminophen.svg);
+  animation-delay: 1.90s;
+  background-size: 200px;
+}
+.skelton4 div:nth-child(6) {
+  top: 230px; left: 280px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Celecoxib.svg);
+  animation-delay: 0.32s;
+  background-size: 220px;
+}
+.skelton4 div:nth-child(7) {
+  top: 200px; left: 500px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Retinol.svg);
+  animation-delay: 0.90s;
+  background-size: 300px;
+}
+.skelton4 div:nth-child(8) {
+  top: 0px; left: 590px;
+  width: 100%; height: 100%;
+  background-image: url(./images/Riboflavin.svg);
+  animation-delay: 1.85s;
+  background-size: 220px;
+}
+.skelton4 div:nth-child(9) {
+  top: 260px; left: 120px;
+  background-image: url(./images/adenine.svg);
+  animation-delay: 0.27s;
+  background-size: 100px;
+}
+.skelton4 div:nth-child(10) {
+  top: 420px; left: 60px;
+  background-image: url(./images/alanine.svg);
+  animation-delay: 1.60s;
+  background-size: 120px;
+}
+.skelton4 div:nth-child(11) {
+  top: 400px; left: 430px;
+  background-image: url(./images/amino.svg);
+  animation-delay: 1.38s;
+  background-size: 250px;
+}
+.skelton4 div:nth-child(12) {
+  top: 500px; left: 170px;
+  background-image: url(./images/anserine.svg);
+  animation-delay: 1.50s;
+  background-size: 250px;
+}
+.skelton4 div:nth-child(13) {
+  top: 260px; left: 670px;
+  background-image: url(./images/carnosine.svg);
+  animation-delay: 0.65s;
+  background-size: 270px;
+}
+.skelton4 div:nth-child(14) {
+  top: 520px; left: 670px;
+  background-image: url(./images/cytosine.svg);
+  animation-delay: 0.82s;
+  background-size: 100px;
+}
+.skelton4 div:nth-child(15) {
+  top: 90px; left: 880px;
+  background-image: url(./images/deoxyribose.svg);
+  animation-delay: 1.61s;
+  background-size: 100px;
+}
+.skelton4 div:nth-child(16) {
+  top: 600px; left: 80px;
+  background-image: url(./images/galactose.svg);
+  animation-delay: 1.53s;
+  background-size: 100px;
+}
+.skelton4 div:nth-child(17) {
+  top: 700px; left: 400px;
+  background-image: url(./images/Acetaminophen.svg);
+  animation-delay: 1.71s;
+  background-size: 200px;
+}
+.skelton4 div:nth-child(18) {
+  top: 400px; left: 920px;
+  background-image: url(./images/adenine.svg);
+  animation-delay: 0.42s;
+  background-size: 130px;
+}
+.skelton4 div:nth-child(19) {
+  top: 200px; left: 1060px;
+  animation-delay: 1.09s;
+  background-image: url(./images/alanine.svg);
+  background-size: 130px;
+}
+.skelton4 div:nth-child(20) {
+  top: 650px; left: 830px;
+  background-image: url(./images/amino.svg);
+  animation-delay: 1.49s;
+  background-size: 240px;
+}
+.skelton4 div:nth-child(21) {
+  top: 780px; left: 630px;
+  background-image: url(./images/anserine.svg);
+  animation-delay: 1.02s;
+  background-size: 240px;
+}
+.skelton4 div:nth-child(22) {
+  top: 730px; left: 60px;
+  background-image: url(./images/carnosine.svg);
+  animation-delay: 0.33s;
+  background-size: 240px;
+}
+.skelton4 div:nth-child(23) {
+  top: 840px; left: 460px;
+  background-image: url(./images/Celecoxib.svg);
+  animation-delay: 1.00s;
+  background-size: 240px;
+}
+.skelton4 div:nth-child(24) {
+  top: 20px; left: 1020px;
+  background-image: url(./images/cytosine.svg);
+  animation-delay: 1.00s;
+  background-size: 100px;
+}
+.skelton4 div:nth-child(25) {
+  top: 570px; left: 520px;
+  background-image: url(./images/deoxyribose.svg);
+  animation-delay: 0.60s;
+  background-size: 100px;
+}
+.skelton4 div:nth-child(26) {
+  top: 540px; left: 1060px;
+  background-image: url(./images/dopamine.svg);
+  animation-delay: 0.96s;
+  background-size: 170px;
+}
+.skelton4 div:nth-child(27) {
+  top: 480px; left: 800px;
+  background-image: url(./images/galactose.svg);
+  animation-delay: 1.56s;
+  background-size: 80px;
+}
+.skelton4 div:nth-child(28) {
+  top: 920px; left: 30px;
+  background-image: url(./images/Retinol.svg);
+  animation-delay: 1.98s;
+  background-size: 360px;
+}
+.skelton4 div:nth-child(29) {
+  top: 770px; left: 990px;
+  background-image: url(./images/Riboflavin.svg);
+  animation-delay: 1.15s;
+  background-size: 260px;
+}
+.skelton4 div:nth-child(30) {
+  top: 900px; left: 720px;
+  background-image: url(./images/serotonin.svg);
+  animation-delay: 1.55s;
+  background-size: 260px;
+}
+.skelton4 div:nth-child(31) {
+  top: 900px; left: 720px;
+  animation-delay: 1.47s;
+  background-image: url(./images/Acetaminophen.svg);
+  background-size: 260px;
 }
