@@ -106,6 +106,22 @@
 .exp_stage {
   position: absolute;
   border: dashed #5f5f6f;
-  top: 100px; left: 30%;
+  top: 0; left: 0;
   width: calc(70% - 40px); height: calc(100% - 140px);
+}
+.toc_stage {
+  position: absolute;
+  border: dashed #5f5f6f;
+  top: 0; left: 0;
+  width: calc(70% - 40px); height: calc(100% - 140px);
+}
+.content_stage {
+  position: absolute;
+  border: dashed #5f5f6f;
+  top: 0; left: 0;
+  width: calc(70% - 40px); height: calc(100% - 140px);
+}
+.toc_stage::after {
+  width: 5px; height: calc(100% + 20px);
+  background-color: #fff;
 }
