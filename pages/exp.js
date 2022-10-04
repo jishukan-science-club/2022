@@ -6,17 +6,38 @@ export default function Exp() {
     <div className={styles.container}>
       <div className={styles.stage}>
         <div className={styles.logo}>
-          <div className={styles.jssclogo} />
-          <div className={styles.jslogo} />
+          <Link href="/">
+            <a>
+              <div className={styles.jssclogo} />
+            </a>
+          </Link>
+          <a target="_blank" href="https://www.jishukan.ed.jp/" rel="noopener noreferrer">
+            <div className={styles.jslogo} />
+          </a>
         </div>
-        {/* <div className={styles.exp_stage}>
-          <div className={styles.toc_stage}>
-            <a href="#1st"><p>1年...</p></a>
-            <a href="#2nd"><p>2年...</p></a>
-            <a href="#3rd"><p>3年...</p></a>
-            <a href="#4th"><p>4年...</p></a>
-            <a href="#5th"><p>5年...</p></a>
-          </div>
+        <nav className={styles.nav}>
+          <Link href="/exp">
+            <div className={styles.inner}>
+              <p>Experiments</p>
+            </div>
+          </Link>
+          <Link href="/note">
+            <div className={styles.inner}>
+              <p>Notes</p>
+            </div>
+          </Link>
+          <Link href="/ext">
+            <div className={styles.inner}>
+              <p>Ext</p>
+            </div>
+          </Link>
+          <Link href="/about">
+            <div className={styles.inner}>
+              <p>About</p>
+            </div>
+          </Link>
+        </nav>
+        <div className={styles.exp_stage}>
           <div className={styles.content_stage}>
             <h1>実験一覧</h1>
             <div>
@@ -46,28 +67,6 @@ export default function Exp() {
             </div>
           </div>
         </div>
-        <nav className={styles.nav}>
-          <Link href="/exp">
-            <div className={styles.inner}>
-              <p>Experiments</p>
-            </div>
-          </Link>
-          <Link href="/note">
-            <div className={styles.inner}>
-              <p>Notes</p>
-            </div>
-          </Link>
-          <Link href="/ext">
-            <div className={styles.inner}>
-              <p>Ext</p>
-            </div>
-          </Link>
-          <Link href="/about">
-            <div className={styles.inner}>
-              <p>About</p>
-            </div>
-          </Link>
-        </nav> */}
       </div>
     </div>
   )

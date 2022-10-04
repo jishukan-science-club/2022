@@ -7,7 +7,11 @@ export default function Home() {
       <div className={styles.stage}>
         <div className={styles.logo}>
           <div className={styles.jssclogo} />
-          <div className={styles.jslogo} />
+          <Link href="https://www.jishukan.ed.jp/">
+            <a>
+              <div className={styles.jslogo} />
+            </a>
+          </Link>
         </div>
         <nav className={styles.nav}>
           <Link href="/exp">
