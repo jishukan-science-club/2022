@@ -7,11 +7,9 @@ export default function Home() {
       <div className={styles.stage}>
         <div className={styles.logo}>
           <div className={styles.jssclogo} />
-          <Link href="https://www.jishukan.ed.jp/">
-            <a>
-              <div className={styles.jslogo} />
-            </a>
-          </Link>
+          <a target="_blank" href="https://www.jishukan.ed.jp/" rel="noopener noreferrer">
+            <div className={styles.jslogo} />
+          </a>
         </div>
         <nav className={styles.nav}>
           <Link href="/exp">
