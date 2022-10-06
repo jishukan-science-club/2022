@@ -1,7 +1,7 @@
 import Link from 'next/link'
-import styles from '../styles/About.module.css'
+import styles from '../../styles/Ext.module.css'
 
-export default function About() {
+export default function Ext() {
   return (
     <div className={styles.container}>
       <div className={styles.stage}>
@@ -39,7 +39,8 @@ export default function About() {
         </nav>
         <div className={styles.exp_stage}>
           <div className={styles.content_stage}>
-            <h1>JSSC</h1>
+            <h1>oncyberへの参加の方法</h1>
+            <p>超それっぽい説明</p>
           </div>
         </div>
       </div>

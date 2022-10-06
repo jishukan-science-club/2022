@@ -1,12 +1,12 @@
 import Link from 'next/link'
-import styles from '../styles/Note.module.css'
+import styles from '../../styles/Note.module.css'
 
 export default function Note() {
   return (
     <div className={styles.container}>
       <div className={styles.stage}>
         <div className={styles.logo}>
-          <Link href="/">
+          <Link href="/2022">
             <a>
               <div className={styles.jssclogo} />
             </a>
@@ -40,7 +40,7 @@ export default function Note() {
         <div className={styles.exp_stage}>
           <div className={styles.content_stage}>
             <h1>ノート一覧</h1>
-            <Link href="/">
+            <Link href="/note/poap">
               <a>
                 <div>
                   <h2>POAPの取得の方法</h2>
@@ -48,7 +48,7 @@ export default function Note() {
                 </div>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/note/oncyber">
               <a>
                 <div>
                   <h2>oncyberへの参加の方法</h2>
@@ -57,7 +57,7 @@ export default function Note() {
                 </div>
               </a>
             </Link>
-            <Link href="/">
+            <Link href="/note/metamask">
               <a>
                 <div>
                   <h2>Metamaskの使い方</h2>

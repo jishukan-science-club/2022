@@ -6,7 +6,7 @@ export default function Exp() {
     <div className={styles.container}>
       <div className={styles.stage}>
         <div className={styles.logo}>
-          <Link href="/">
+          <Link href="/2022">
             <a>
               <div className={styles.jssclogo} />
             </a>
