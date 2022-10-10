@@ -3,9 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
+    unoptimized: true,
     domains: ['camo.qiitausercontent.com'],
   },
-  assetPrefix: '/2022',
 }
 
 module.exports = nextConfig
