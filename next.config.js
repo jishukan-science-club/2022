@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: '/2022'
+  swcMinify: true,
   images: {
     domains: ['camo.qiitausercontent.com'],
   },
-  swcMinify: true,
+  assetPrefix: '/2022',
 }
 
 module.exports = nextConfig
