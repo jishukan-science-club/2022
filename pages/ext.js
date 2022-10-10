@@ -39,7 +39,7 @@ export default function Ext() {
         </nav>
         <div className={styles.exp_stage}>
           <div className={styles.content_stage}>
-            <h1>Oncyber</h1>
+            <h1>oncyber</h1>
             <p>超それっぽい説明</p>
             <a href="https://oncyber.io/spaces/H8KNVYU8bvmFp0oBDhtr" target="_blank" rel="noopener noreferrer">テストワールド</a>
           </div>

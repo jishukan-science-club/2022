@@ -40,11 +40,11 @@ export default function Note() {
         <div className={styles.exp_stage}>
           <div className={styles.content_stage}>
             <h1>ノート一覧</h1>
-            <Link href="/note/poap">
+            <Link href="/note/metamask">
               <a>
                 <div>
-                  <h2>POAPの取得の方法</h2>
-                  <p>説明</p>
+                  <h2>Metamaskの使い方</h2>
+                  <p>最初にお読みください。oncyberやPOAPの操作にはMetaMaskのウォレットが必要になります。</p>
                 </div>
               </a>
             </Link>
@@ -52,17 +52,15 @@ export default function Note() {
               <a>
                 <div>
                   <h2>oncyberへの参加の方法</h2>
-                  画像
-                  <p>説明</p>
+                  <p>メタバース理科室への参加方法です。説明には、テスト用のワールドを使用しています。</p>
                 </div>
               </a>
             </Link>
-            <Link href="/note/metamask">
+            <Link href="/note/poap">
               <a>
                 <div>
-                  <h2>Metamaskの使い方</h2>
-                  画像
-                  <p>説明</p>
+                  <h2>POAPの取得の方法</h2>
+                  <p>今回の企画に参加した証の取得方法です。当日から約一週間、メタバース理科室上にQRコードが公開されます。</p>
                 </div>
               </a>
             </Link>

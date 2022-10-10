@@ -189,10 +189,11 @@
   font-size: 60px;
 }
 
-.content_stage div {
-  background-color: #001e33;
-  border: solid #0068b3;
-  margin: 50px auto;
+.content_stage h2 {
+  font-size: 40px;
+}
+.content_stage h3 {
+  font-size: 30px;
 }
 
 .content_stage::-webkit-scrollbar-track{
