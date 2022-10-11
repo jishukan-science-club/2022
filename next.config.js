@@ -3,6 +3,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   assetPrefix: '/2022',
+  images: {
+    unoptimized: true
+  },
 }
 
 module.exports = nextConfig
