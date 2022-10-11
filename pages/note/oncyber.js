@@ -45,20 +45,20 @@ export default function Ext() {
             <a target="_blank" href="https://oncyber.io/spaces/3CnAkSyeIU55GFdhTdaY" rel="noopener noreferrer">Link to... [JSSC Test World]</a>
             <p>ここは、科学部のテスト用メタバース空間です。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="/oncy/1.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain' src="/oncy/1.png" alt="image.png" /></a>
+              <a href="/2022/oncy/1.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain' src="/2022/oncy/1.png" alt="image.png" /></a>
             </div>
             <p>右上にある<code>Connect Wallet</code>をクリックします</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="/oncy/2.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain' src="/oncy/2.png" alt="image.png" /></a>
+              <a href="/2022/oncy/2.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain' src="/2022/oncy/2.png" alt="image.png" /></a>
             </div>
             <p><code>Metamask</code>を選択してから先は、OpenSeaと同じです。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="/oncy/3.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/oncy/3.png" alt="image.png" /></a>
+              <a href="/2022/oncy/3.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/2022/oncy/3.png" alt="image.png" /></a>
             </div>
             <p>このようなポップアップが表示されたら、適当に埋めて、SAVEしましょう。</p>
             <p>これで、登録は完了です。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="/oncy/4.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/oncy/4.png" alt="image.png" /></a>
+              <a href="/2022/oncy/4.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/2022/oncy/4.png" alt="image.png" /></a>
             </div>
             <p>ここを切り替えると、マルチモードになり、部屋に入ってるほかの人も見ることができます。</p>
           </div>

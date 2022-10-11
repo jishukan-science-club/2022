@@ -42,7 +42,7 @@ export default function Ext() {
           <div className={styles.content_stage}>
             <h1>POAPの取得の方法</h1>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="/poap/1.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/1.png" alt="image.png" /></a>
+              <a href="/2022/poap/1.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/2022/poap/1.png" alt="image.png" /></a>
             </div>
             <p>この赤線で囲った部分をクリックしてください。<br />
             ここをクリックすることで、アカウント(ウォレット)のIDをコピーすることができます。</p>
@@ -56,17 +56,17 @@ export default function Ext() {
             <hr />
             <p>アプリを開くと、この様な画面になると思います。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-            <a href="/poap/2.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/2.png" alt="image.png" /></a>
+            <a href="/2022/poap/2.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/2022/poap/2.png" alt="image.png" /></a>
             </div>
             <p>この下の、<code>Your address</code>と書かれた場所に、先ほどコピーしたIDをペーストします</p>
             <p>IDが正しければ、この画面と似たような画面になると思います。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="/poap/3.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/3.png" alt="image.png" /></a>
+              <a href="/2022/poap/3.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/2022/poap/3.png" alt="image.png" /></a>
             </div>
             <p>右下の<code>Mint</code>と書かれたボタンを押してください。</p>
             <p>三つほどオプションが表示されます。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="/poap/4.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/4.png" alt="image.png" /></a>
+              <a href="/2022/poap/4.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/2022/poap/4.png" alt="image.png" /></a>
             </div>
             <p>QRコードで取得するので、<code>Scan QR</code>を押してください。<br />
             そして、メタバース理科室上に表示されているQRコードを読み込みます。<br />
