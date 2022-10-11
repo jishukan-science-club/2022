@@ -6,7 +6,7 @@ export default function Ext() {
     <div className={styles.container}>
       <div className={styles.stage}>
         <div className={styles.logo}>
-          <Link href="/2022">
+          <Link href="/">
             <a>
               <div className={styles.jssclogo} />
             </a>
