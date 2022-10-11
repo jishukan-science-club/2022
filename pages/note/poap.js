@@ -42,7 +42,7 @@ export default function Ext() {
           <div className={styles.content_stage}>
             <h1>POAPの取得の方法</h1>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="https://camo.qiitausercontent.com/12200fa4d1eb6a43df39c74f7df809789ef0d9c1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3937343338352f66303638316665362d313931662d376366362d323762362d3065303938396531393263642e706e67" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="https://camo.qiitausercontent.com/12200fa4d1eb6a43df39c74f7df809789ef0d9c1/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3937343338352f66303638316665362d313931662d376366362d323762362d3065303938396531393263642e706e67" alt="image.png" /></a>
+              <a href="/poap/1.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/1.png" alt="image.png" /></a>
             </div>
             <p>この赤線で囲った部分をクリックしてください。<br />
             ここをクリックすることで、アカウント(ウォレット)のIDをコピーすることができます。</p>
@@ -56,17 +56,17 @@ export default function Ext() {
             <hr />
             <p>アプリを開くと、この様な画面になると思います。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-            <a href="https://camo.qiitausercontent.com/073f67d48858a02a83afa45a4b73de933bea1a6a/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3937343338352f62623564613234302d663430662d333638652d623535322d6531383665666537363738642e706e67" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="https://camo.qiitausercontent.com/073f67d48858a02a83afa45a4b73de933bea1a6a/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3937343338352f62623564613234302d663430662d333638652d623535322d6531383665666537363738642e706e67" alt="image.png" data-canonical-src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/974385/bb5da240-f40f-368e-b552-e186efe7678d.png" /></a>
+            <a href="/poap/2.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/2.png" alt="image.png" /></a>
             </div>
             <p>この下の、<code>Your address</code>と書かれた場所に、先ほどコピーしたIDをペーストします</p>
             <p>IDが正しければ、この画面と似たような画面になると思います。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="https://camo.qiitausercontent.com/a4e12632df97d4cb78a45c31584b826221c00f9e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3937343338352f64363339396638632d383661372d363466352d386236372d3363613165626433666539392e706e67" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="https://camo.qiitausercontent.com/a4e12632df97d4cb78a45c31584b826221c00f9e/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3937343338352f64363339396638632d383661372d363466352d386236372d3363613165626433666539392e706e67" alt="image.png" data-canonical-src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/974385/d6399f8c-86a7-64f5-8b67-3ca1ebd3fe99.png" /></a>
+              <a href="/poap/3.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/3.png" alt="image.png" /></a>
             </div>
             <p>右下の<code>Mint</code>と書かれたボタンを押してください。</p>
             <p>三つほどオプションが表示されます。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="https://camo.qiitausercontent.com/6b8c619ff81b03a0f625fe0f4639360ef449472d/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f323639373037372f65613633306433302d343961312d313439302d353764662d3137626362666365393965372e706e67" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="https://camo.qiitausercontent.com/6b8c619ff81b03a0f625fe0f4639360ef449472d/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f323639373037372f65613633306433302d343961312d313439302d353764662d3137626362666365393965372e706e67" alt="image.png" data-canonical-src="https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/2697077/ea630d30-49a1-1490-57df-17bcbfce99e7.png" /></a>
+              <a href="/poap/4.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/4.png" alt="image.png" /></a>
             </div>
             <p>QRコードで取得するので、<code>Scan QR</code>を押してください。<br />
             そして、メタバース理科室上に表示されているQRコードを読み込みます。<br />
