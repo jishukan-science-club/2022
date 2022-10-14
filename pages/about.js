@@ -40,6 +40,10 @@ export default function About() {
         <div className={styles.exp_stage}>
           <div className={styles.content_stage}>
             <h1>JSSC</h1>
+            <p>自修館中等教育学校科学部です。</p>
+            <p>この部活では、「化学」だけでなく、その他、科学に関係しているものをとことん探究している部活です。</p>
+            <p>例えば、テレビで観た面白そうな実験を調べ、分析し、自分の意のままに操作できるようになるまで化学反応を突き詰めています。</p>
+            <p>他にも、ロボットを使った電子工学やコンピューターを使ったWeb3.0の研究など、様々な分野の「科学」をしています。</p>
           </div>
         </div>
       </div>
