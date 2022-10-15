@@ -59,19 +59,14 @@ export default function Ext() {
             <a href="/poap/2.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/2.png" alt="image.png" /></a>
             </div>
             <p>この下の、<code>Your address</code>と書かれた場所に、先ほどコピーしたIDをペーストします</p>
-            <p>IDが正しければ、この画面と似たような画面になると思います。</p>
+            <p>IDが正しければ、この画面と似たような画面になると思います。<br />
+            この状態になることで、POAPの取得、表示が可能となりました。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
               <a href="/poap/3.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/3.png" alt="image.png" /></a>
             </div>
-            <p>右下の<code>Mint</code>と書かれたボタンを押してください。</p>
-            <p>三つほどオプションが表示されます。</p>
-            <div style={{width:'100%',height:'50%',position:'relative'}}>
-              <a href="/poap/4.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/4.png" alt="image.png" /></a>
-            </div>
             <p>QRコードで取得するので、<code>Scan QR</code>を押してください。<br />
-            そして、メタバース理科室上に表示されているQRコードを読み込みます。<br />
-            スキャンができない場合は、<code>Scan QR</code>ではなく<code>Secret Word</code>をクリックし、QRコードの横に記載されているフレーズを入力してください。</p>
-            <p>下の<code>Mint</code>ボタンを押し、少し待つとPOAPの取得が完了します。</p>
+            そして、科学部員のパソコンに表示されているQRコードを読み込みます。<br />
+            QRコードの写真を撮っておいて、後で取得することも可能です。</p>
           </div>
         </div>
       </div>
