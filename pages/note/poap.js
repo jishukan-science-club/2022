@@ -41,6 +41,7 @@ export default function Ext() {
         <div className={styles.exp_stage}>
           <div className={styles.content_stage}>
             <h1>POAPの取得の方法</h1>
+            <Link href="/note/metamask">【Metamaskの使い方】</Link><p>上記のコースが終了した後に、以下を行ってください。</p>
             <div style={{width:'100%',height:'50%',position:'relative'}}>
               <a href="/poap/1.png" target="_blank" rel="nofollow noopener noreferrer"><Image layout='fill' objectFit='contain'  src="/poap/1.png" alt="image.png" /></a>
             </div>
